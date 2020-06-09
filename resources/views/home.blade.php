@@ -49,8 +49,8 @@
 <!-- --- -->
 <div class="separator-150"></div>
 <!-- --- -->
-<div class="ceo-block">
-    <div class="ceo-text">
+<div class="block-tmp">
+    <div class="ceo-text one-group">
         <h2>Людмила</h2>
         <h4>Старший дизайнер</h4>
         <hr class="hr">
@@ -61,6 +61,20 @@
 <!-- --- -->
 <div class="separator-150"></div>
 <!-- --- -->
+<div class="block-tmp">
+        <div class="pics3">
+            <div class="vertical">
+                <img src="images/3-pics/vert.jpg" alt="">
+            </div>
+            <div class="">
+                <img src="images/3-pics/goriz1.jpg" alt="">
+            </div>
+            <div class="">
+                    <img src="images/3-pics/goriz2.jpg" alt="">
+            </div>
+        </div>
+</div>
+
 
 <script src="wow-animation/wow.min.js"></script>
 <script>
