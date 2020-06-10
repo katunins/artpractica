@@ -24,27 +24,33 @@
         </div>
     </div>
 <!-- --- -->
-<div class="separator-70"></div>
+<div class="separator-150"></div>
 <!-- --- -->
 <div class="block-tmp">
+    <a href="">
     <div class="one-group wow fadeIn">
         <div class="img-container">
             <img src="/images/group_1.jpg" alt="">
         </div>
         <div class="title-container">Квартиры до 50кв.м</div>
     </div>
-    <div class="one-group wow fadeIn" data-wow-delay="150ms">
+</a>
+<a href="">
+<div class="one-group wow fadeIn" data-wow-delay="150ms">
         <div class="img-container">
             <img src="/images/group_2.jpg" alt="">
         </div>
         <div class="title-container">Проекты коттеджей</div>
     </div>
+</a>    
+<a href="">
     <div class="one-group wow fadeIn" data-wow-delay="300ms">
         <div class="img-container">
             <img src="/images/group_3.jpg" alt="">
         </div>
         <div class="title-container">Коммерческие интерьеры</div>
     </div>
+</a>
 </div>
 <!-- --- -->
 <div class="separator-150"></div>
@@ -56,26 +62,75 @@
         <hr class="hr">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugiat sequi quas dolore? Dignissimos commodi quae quis beatae cupiditate in quo. Exercitationem aut eos, odio autem iste facilis ab suscipit!</p>
     </div>
-    <div class="ceo-portrait"><img src="/images/portrait.png" alt=""></div>
+    <div class="ceo-portrait wow fadeIn" data-wow-delay="150ms"><img src="/images/portrait.png" alt=""></div>
 </div>
 <!-- --- -->
-<div class="separator-150"></div>
+<div class="separator-70"></div>
+<div class="portfolio">
+    <a class="wow pulse" data-wow-iteration="10" href="">Portfolio</a>
+</div>
+<div class="text">
+    Мы собрали все наши работы, отсортировали по фильтрам
+</div>
+{{-- <a href="" class="fciA navItem wow pulse" data-wow-iteration="10"><span class="fciSpan">перейти в Portfolio</span></a> --}}
+<div class="separator-70"></div>
 <!-- --- -->
 <div class="block-tmp">
         <div class="pics3">
-            <div class="vertical">
+            <div class="vertical wow fadeIn" data-wow-delay="150ms">
                 <img src="images/3-pics/vert.jpg" alt="">
             </div>
-            <div class="">
+            <div class="wow fadeIn" data-wow-delay="300ms">
                 <img src="images/3-pics/goriz1.jpg" alt="">
             </div>
-            <div class="">
+            <div class="wow fadeIn" data-wow-delay="450ms">
                     <img src="images/3-pics/goriz2.jpg" alt="">
             </div>
         </div>
 </div>
+<!-- --- -->
+{{-- <div class="separator-150"></div> --}}
+<div class="tilda">
+    <img src="/images/tilda.png" alt="">
+</div>
+<!-- --- -->
+<div class="block-tmp wow fadeIn" data-wow-delay="150ms">
+    <div class="image-block">
+        <img src="images/team.jpg" alt="">
+            <div>В нашей команде есть свой инженер проектировщик, дизайнер-конструктор, юрист - документосопроводитель, прораб технадзор</div>
+    </div>
+</div>
 
 
+</div>
+
+
+<!-- --- -->
+{{-- <div class="separator-150"> --}}
+    <div class="tilda">
+        <img src="/images/tilda.png" alt="">
+    </div>
+    <!-- --- -->
+</div>
+    
+<div class="block-tmp">
+    <div class="form">
+        <h3>Расскажите нам про вашу задачу, оставьте контакты. Мы свяжемся с вами в ближайшее время</h3>
+    <form action="{{ route('form') }}" method="POST">
+            @csrf
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="tel" name="tel" placeholder="+7(999)999 99 99">
+            <textarea name="message" id="" cols="30" rows="7" placeholder="Ваше сообщение"></textarea>
+            {{-- <input type="text" placeholder="Ваше сообщение"> --}}
+            <input class="submit" type="submit" name="submit" value="Отправить">
+    </form>
+    </div>
+    
+</div>
+<!-- --- -->
+<div class="separator-150">
+    <!-- --- -->
+    
 <script src="wow-animation/wow.min.js"></script>
 <script>
     wow = new WOW(
